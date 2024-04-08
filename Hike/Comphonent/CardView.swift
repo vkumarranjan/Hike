@@ -12,6 +12,8 @@ struct CardView: View {
     @State private var imageNumber: Int = 1
     @State private var randomNumber: Int = 1
     
+    @State private var isShowingSHeet: Bool = false
+    
     // MARK: Functions
     func randomInage() {
         repeat {
@@ -37,9 +39,12 @@ struct CardView: View {
                         )
                         Spacer()
                         Button {
-                            
+                            isShowingSHeet.toggle()
                         } label: {
                             CustomButtonView()
+                        }
+                        .sheet(isPresented: $isShowingSHeet) {
+                            SettingsView()
                         }
                     }
                     
