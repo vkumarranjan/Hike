@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SettingsView: View {
+    private let alternateAppIcons: [String] = ["AppIcon-Backpack", "AppIcon-Camera","AppIcon-Campfire","AppIcon-MagnifyingGlass","AppIcon-Map","AppIcon-Mushroom"]
+    
     var body: some View {
         List {
             Section {
@@ -49,7 +51,32 @@ struct SettingsView: View {
             }
             .listRowSeparator(.hidden)
             // MARK: SECTION Icons
-            
+            Section(header: Text("Alternate ICONS")) {
+                ScrollView(.horizontal, showsIndicators: false){
+                    HStack (spacing: 12){
+                        ForEach(alternateAppIcons.indices, id: \.self) { item in
+                            Button {
+                                print("Pressed ")
+                            } label: {
+                                Image("\(alternateAppIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .cornerRadius(16)
+                            }
+                        .buttonStyle(.borderless)
+                        }
+                    }
+                } //: Scroll VIEW
+                .padding(.top, 12)
+                
+                Text("Choose your fevraout icon from the collection above.")
+                    .frame(minWidth: 0 , maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+            }
+            .listRowSeparator(.hidden)
             
             Section(header: Text("About THE APP"),
                     footer: HStack {
