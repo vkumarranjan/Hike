@@ -19,6 +19,7 @@
 		D6E8E6952BBFA6D4001C97A3 /* CustomCircelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8E6942BBFA6D4001C97A3 /* CustomCircelView.swift */; };
 		D6E8E6972BBFCDF3001C97A3 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8E6962BBFCDF3001C97A3 /* MotionAnimationView.swift */; };
 		D6E8E69A2BBFFC11001C97A3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8E6992BBFFC11001C97A3 /* SettingsView.swift */; };
+		D6E8E69C2BC4E2F6001C97A3 /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8E69B2BC4E2F6001C97A3 /* CustomListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D6E8E6942BBFA6D4001C97A3 /* CustomCircelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircelView.swift; sourceTree = "<group>"; };
 		D6E8E6962BBFCDF3001C97A3 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		D6E8E6992BBFFC11001C97A3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D6E8E69B2BC4E2F6001C97A3 /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				D6E8E67C2BB67536001C97A3 /* ContentView.swift */,
 				D6E8E6992BBFFC11001C97A3 /* SettingsView.swift */,
+				D6E8E69B2BC4E2F6001C97A3 /* CustomListRowView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				D6E8E6932BBFA200001C97A3 /* CustomButtonView.swift in Sources */,
 				D6E8E6952BBFA6D4001C97A3 /* CustomCircelView.swift in Sources */,
+				D6E8E69C2BC4E2F6001C97A3 /* CustomListRowView.swift in Sources */,
 				D6E8E67D2BB67536001C97A3 /* ContentView.swift in Sources */,
 				D6E8E68F2BBEB75B001C97A3 /* ColorExt.swift in Sources */,
 				D6E8E6892BBE1B46001C97A3 /* CardView.swift in Sources */,

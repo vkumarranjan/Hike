@@ -50,6 +50,30 @@ struct SettingsView: View {
             .listRowSeparator(.hidden)
             // MARK: SECTION Icons
             
+            
+            Section(header: Text("About THE APP"),
+                    footer: HStack {
+                Spacer()
+                     Text("Coptyright ©️All the reserved.")
+                Spacer()
+            }
+                .padding(.vertical, 8)
+                    
+            ) {
+                // 1. Basic Labled Content
+              //  LabeledContent("Application", value: "Hike")
+              // 2. Advanced Labled Content
+                CustomListRowView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "HIKE", rowTintColor: .blue)
+                
+                CustomListRowView(rowLabel: "Compatiblity", rowIcon: "info.circle", rowContent: "iOS, iPadOS", rowTintColor: .red)
+                
+                CustomListRowView(rowLabel: "Tech", rowIcon: "swift", rowContent: "1.0", rowTintColor: .orange)
+                
+                CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .purple)
+                
+                CustomListRowView(rowLabel: "Developer", rowIcon: "ellipsis.curlybraces", rowContent: "Vinay Ranjan", rowTintColor: .mint)
+            }
+            
             // MARK: SECTION Acount
         } //: LIST
        
